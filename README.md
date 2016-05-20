@@ -2,7 +2,7 @@
 A script to install Docker on Raspbery Pi
 
 # Execution
-- `wget https://raw.githubusercontent.com/tyrell/rpi-docker-setup/master/rpi-docker-setup.sh`
+- `wget https://raw.githubusercontent.com/tyrell/rpi-docker-setup/master/scripts/rpi-docker-setup.sh`
 - `sh rpi-docker-setup.sh`
 
 ## License

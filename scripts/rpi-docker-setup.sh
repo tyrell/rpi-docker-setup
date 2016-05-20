@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# @author Tyrell Perera 
+# @author Tyrell Perera
 
 # Configure local apt repository for the Hypriot's Docker distro
 echo "Configuring local apt repository"
@@ -24,5 +24,9 @@ sudo usermod -aG docker pi
 # Verification
 echo "Confirming Docker version"
 docker version
-echo "Running ARM version of Docker hello-world"
-docker run armhf/hello-world
+echo "Confirming that the Docker service is running"
+sudo /usr/sbin/service docker start
+
+# Inform the user to refresh session
+echo "Congratulations! Your Docker installation is complete."
+echo "Please refresh your session for all settings to become active."
